@@ -1,0 +1,13 @@
+"0",""
+"0","#time frame analysis of establishment of EVCS************************************"
+"0","ev.stations <- ev.stations %>% mutate(.,Open_yr = stringr::str_sub(`Open Date`, 1, 4))"
+"0",""
+"0","ev.stations %>% group_by(Open_yr) %>% summarize(TypeCount = n()) %>%"
+"0","ggplot(., aes(x = Open_yr, y = TypeCount, group=1)) +"
+"0","  geom_line(color=""orange"", size=1.5)+"
+"0","  geom_point()+"
+"0","  labs(title = ""EVCS Placement From Year 1995 to 2025"", y = ""Count"", x = ""Opening Year"")+"
+"0","  theme_minimal()+"
+"0","  theme(axis.text.x = element_text(angle=45, hjust=1))"
+"2","Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+Please use `linewidth` instead."

@@ -1,0 +1,18 @@
+"0","#symbology map with area**********************************************************"
+"0","tm_shape(state.cs) + "
+"0","  tm_polygons(fill = ""AREASQKM"", fill.scale = tm_scale_intervals(style = ""quantile"", values = ""Blues"")) +"
+"0","  tm_layout("
+"0","    title = ""State Area (sq.km)"","
+"0","    title.size = 1,"
+"0","    title.position = c(""right"", ""top""),"
+"0","    legend.position = c(""right"", ""bottom""),"
+"0","    legend.title.size = 0.8,"
+"0","    legend.title.color = ""black"","
+"0","    legend.text.size = 0.7, "
+"0","    legend.frame = FALSE,"
+"0","  )"
+"2","[38;5;232m[32m[v3->v4][38;5;232m `tm_layout()`: use `tm_title()` instead of `tm_layout(title = )`[39m"
+"2","[38;5;232m[32m[cols4all][38;5;232m color palettes: use palettes from the R package cols4all. Run `cols4all::c4a_gui()` to explore
+them. The old palette name ""Blues"" is named ""brewer.blues""[39m"
+"2","Multiple palettes called ""blues"" found: ""brewer.blues"", ""matplotlib.blues"". The first one, ""brewer.blues"", is returned.
+"

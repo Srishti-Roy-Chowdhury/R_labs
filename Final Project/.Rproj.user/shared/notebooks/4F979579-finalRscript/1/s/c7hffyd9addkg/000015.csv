@@ -1,0 +1,8 @@
+"0","evcs.open <- ev.stations %>% group_by(Open_yr, `Access Code`) %>% summarize(TypeCount = n(), .groups = ""drop"")"
+"0","write.csv(evcs.open, ""./result/evcs.open.csv"")"
+"0",""
+"0","ggplot(evcs.open, aes(x = Open_yr, y= TypeCount, fill=`Access Code`)) +"
+"0","  geom_bar(stat = ""identity"", position = ""stack"") +"
+"0","  labs(title = ""EVCS Placement year-wise"", y = ""Count"", x = ""Year"")+"
+"0","  theme_minimal()+"
+"0","  theme(axis.text.x = element_text(angle=45, hjust=1))"

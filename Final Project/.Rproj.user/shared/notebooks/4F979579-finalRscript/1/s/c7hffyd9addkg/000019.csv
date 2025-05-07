@@ -1,0 +1,3 @@
+"0",""
+"0","#state-wise different types of Chargers*******************************************"
+"0","ev.stations %>% group_by(State) %>% summarise(.,TotalCount = n(), Level1=sum(`EV Level1 EVSE Num`, na.rm = TRUE), Level2= sum(`EV Level2 EVSE Num`, na.rm = TRUE), Fast=sum(`EV DC Fast Count`, na.rm = TRUE), .groups = ""drop"")"

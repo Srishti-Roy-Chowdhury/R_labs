@@ -1,0 +1,32 @@
+"0","ev.stations <- read_csv(""./data/ev charging station.csv"")"
+"2","Warning: [38;5;232mOne or more parsing issues, call `problems()` on your data
+frame for details, e.g.:
+  dat <- vroom(...)
+  problems(dat)[39m"
+"2","[1mRows: [22m[34m82490[39m [1mColumns: [22m[34m75[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m  (30): Fuel Type Code, Station Name, Street Address,...
+[32mdbl[39m   (7): EV Level1 EVSE Num, EV Level2 EVSE Num, EV DC...
+[33mlgl[39m  (35): Plus4, BD Blends, NG Fill Type Code, NG PSI, ...
+[34mdate[39m  (3): Expected Date, Date Last Confirmed, Open Date"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","ev.users <- read_csv(""./data/ev registration counts.csv"")"
+"2","[1mRows: [22m[34m52[39m [1mColumns: [22m[34m3[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (2): State, State_abb
+[32mnum[39m (1): Registration Count"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","gdp <- read.csv(""./data/GDP_edited.csv"")"
+"0","veh.reg <- read.csv(""./data/Vehicle registration.csv"")"
+"0",""
+"0","state <- read_sf(""./data/state/state.shp"")"
+"0","evcs <- read_sf(""./data/evcs.gpx"")"
+"2","Warning: automatically selected the first layer in a data source containing more than one."
+"0","#midwest <- vect(""./data/state/midwest.shp"")"
+"0","#landcover <- terra::rast(""./data/Annual_NLCD_LndCov_2023_CU_C1V0.tif"")"

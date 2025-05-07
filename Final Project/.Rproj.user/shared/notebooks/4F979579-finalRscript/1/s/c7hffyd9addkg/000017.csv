@@ -1,0 +1,8 @@
+"0",""
+"0","#state-wise CS of different accessibility*****************************************"
+"0","ev.stations %>% as_tibble() %>% group_by(State,`Access Code`) %>% summarize(TypeCount = n(),.groups=""drop"") %>%"
+"0","ggplot(., aes(x = State, y= TypeCount, fill=`Access Code`)) +"
+"0","  geom_bar(stat = ""identity"", position = ""stack"") +"
+"0","  labs(title = ""State-wise Access Type"", y = ""Count"", x = ""State"")+"
+"0","  theme_minimal()+"
+"0","  theme(axis.text.x = element_text(angle=45, hjust=1))"

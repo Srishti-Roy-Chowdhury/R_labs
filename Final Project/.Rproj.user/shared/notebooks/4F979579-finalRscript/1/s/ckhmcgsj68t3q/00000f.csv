@@ -1,0 +1,5 @@
+"0","#removing unnecessary states from datasets"
+"0","ev.stations <- ev.stations %>% dplyr::filter(State!=""AK""& State!=""HI""& State!=""PR"")"
+"0","ev.users <- ev.users %>% dplyr::filter(State_abb!=""AK""& State_abb!=""HI""& State_abb!=""Total"")"
+"0","gdp <- gdp %>% dplyr::filter(State!=""Alaska""& State!=""Hawaii"")"
+"0",""
